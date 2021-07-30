@@ -12,7 +12,7 @@ class Main
         return_array = []
 
         ops.each_with_index do |op, ind|
-            points_hs.keys.include?(op.to_sym) ? points_hs[op.to_sym ].call(return_array) :   return_array.push(op.to_i)
+            points_hs.keys.include?(op.to_sym) ? points_hs[op.to_sym ].call(return_array) :  return_array.push(op.to_i)
         end
 
         return_array.inject(0, &:+)

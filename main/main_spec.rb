@@ -1,6 +1,6 @@
-require_relative 'test.rb'
+require_relative 'main.rb'
 
-describe Test do
+describe Main do
 
     describe '::main' do 
 
@@ -11,10 +11,16 @@ describe Test do
 
         end
 
+        it 'returns  test results' do
+            test = Main.new 
+            test = test.cal_points(["5", "2", "C", "D", "+" ])
+
+            expect(test).to  eq 30
+        end
+
     end 
 
     describe '::another' do 
-
         it '.should return 1 - 1 = 0' do
 
             expect(1-1).to eq 0 

@@ -19,6 +19,18 @@ class Main
 
     end
 
+    def whats_counted(arr)
+        arr.sort!
+        return_array = []
+        arr.each_with_index do |tec, ind|
+             if arr.include?(tec.to_i + 1)
+                return_array.push(tec.to_i) 
+                arr -= [ind]
+             end
+        end
+        return_array
+    end
+
 end
 
 

@@ -27,6 +27,19 @@ describe Main do
 
         end
 
+        it 'whats counted' do
+            test_two = Main.new
+            # test_two = test_two.whats_counted([1,2,3])
+            # test_three = test_two.whats_counted([1,1,3,3,5,5,7,7])
+            # test_three = test_two.whats_counted([1,3,2,3,5,0])
+            test_three = test_two.whats_counted([1,1,2,2])
+
+            # print test_two
+            print test_three
+
+            # expect(test_two).to  eq [1,2]
+        end
+
     end 
 
 end 
